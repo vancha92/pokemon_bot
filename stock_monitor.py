@@ -57,6 +57,7 @@ KEYWORD_GROUPS = [
     ["30th", "elite"],
     ["upc"],
     ["ultra"],
+    ["30th", "bundle"]
 ]
 
 # Products whose title contains any of these are NEVER alerted.
