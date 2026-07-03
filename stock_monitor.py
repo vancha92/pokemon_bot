@@ -64,6 +64,10 @@ KEYWORD_GROUPS = [
 # you for every Ultra PRO sleeve/binder/deck box. Remove it if you want those.
 EXCLUDE_TERMS = [
     "ultra pro",
+    "ultra clear",
+    "dragon ball",
+    "warhammer",
+    "funko",
 ]
 
 # Abbreviations the matcher expands automatically (works in both directions;
