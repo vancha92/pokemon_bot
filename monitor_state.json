@@ -1,212 +1,48 @@
-{
-  "https://www.blackflamecollectibles.com/shop/p/mega-charizard-x-ex-ultra-premium-collection": {
-    "available": true,
-    "title": "Mega Charizard X ex Ultra Premium Collection",
-    "store": "Black Flame",
-    "checked": "2026-07-03T21:32:17"
-  },
-  "https://gamescape.gr/shop/tcg-accessories/sleeves/standard-art-sleeves/dragon-ball-super-card-game-fusion-world-card-goku-ultra-instinct-sleeves-vol-4": {
-    "available": true,
-    "title": "Dragon Ball Super Card Game: Fusion World Card Goku Ultra Instinct Sleeves Vol. 4",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:53"
-  },
-  "https://gamescape.gr/en/shop/tcg-accessories/sleeves/standard-art-sleeves/dragon-ball-super-card-game-fusion-world-card-goku-ultra-instinct-sleeves-vol-4": {
-    "available": true,
-    "title": "Dragon Ball Super Card Game: Fusion World Card Goku Ultra Instinct Sleeves Vol. 4",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:53"
-  },
-  "https://gamescape.gr/en/shop/tcg-accessories/toploaders-holders/up-3-x-4-ultra-clear-platinum-toploader-25ct": {
-    "available": true,
-    "title": "UP – 3″ X 4″ Ultra Clear Platinum Toploader 25ct",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:53"
-  },
-  "https://gamescape.gr/shop/tcg-accessories/toploaders/up-3-x-4-ultra-clear-platinum-toploader-25ct": {
-    "available": true,
-    "title": "UP – 3″ X 4″ Ultra Clear Platinum Toploader 25ct",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:53"
-  },
-  "https://gamescape.gr/en/shop/trading-card-games/dragon-ball-fusion-world/booster-boxes-dragon-ball-fusion-world/dragon-ball-fusion-world-fb04-ultra-limit-booster-box-24-boosters-en-3": {
-    "available": true,
-    "title": "Dragon Ball Fusion World FB04 Ultra Limit Booster Box (24 Boosters) – EN",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:54"
-  },
-  "https://gamescape.gr/shop/trading-card-games/dragon-ball-fusion-world/booster-boxes-dragon-ball-fusion-world/dragon-ball-fusion-world-fb04-ultra-limit-booster-box-24-boosters-en": {
-    "available": true,
-    "title": "Dragon Ball Fusion World FB04 Ultra Limit Booster Box (24 Boosters) – EN",
-    "store": "Gamescape",
-    "checked": "2026-07-03T15:01:54"
-  },
-  "https://www.efantasy.gr/el/προϊόντα/funko-pop/414003-φιγούρα-funko-pop-warhammer-40k-ultramarines-captain-1288": {
-    "available": true,
-    "title": "Φιγούρα Funko POP! Warhammer 40K - Ultramarines\nCaptain #1288",
-    "store": "eFantasy",
-    "checked": "2026-07-03T15:02:13"
-  },
-  "https://www.efantasy.gr/el/προϊόντα/αναζήτηση=ultraman/sort=score/c-964-figures/p-37-1345-manufacturer=banpresto-co": {
-    "available": false,
-    "title": "Banpresto Ultraman | Φιγούρες Αγαλματίδια",
-    "store": "eFantasy",
-    "checked": "2026-07-03T21:33:11"
-  },
-  "https://dabas.hr/product/dbs-dragon-stars-ultra-instinct-goku-figura-17cm": {
-    "available": true,
-    "title": "DBS Dragon Stars Ultra Instinct Goku figura 17cm",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:33"
-  },
-  "https://dabas.hr/product/pokemon-ultra-ball-plisana-igracka-12cm": {
-    "available": true,
-    "title": "Pokemon Ultra Ball plišana igračka 12cm",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:33"
-  },
-  "https://dabas.hr/product/dbs-limit-breaker-ultra-instinct-goku-figura-30cm": {
-    "available": true,
-    "title": "DBS Limit Breaker Ultra Instinct Goku figura 30cm",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/pokemon-mega-charizard-x-ex-ultra-premium-collection": {
-    "available": true,
-    "title": "Pokemon Mega Charizard X ex Ultra Premium Collection",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/dbs-goku-ultra-instinct-match-makers-figura-13cm": {
-    "available": true,
-    "title": "DBS Goku Ultra Instinct Match Makers figura 13cm",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/my-hero-academia-plus-ultra-battle-mirio-togata-figura-6cm": {
-    "available": false,
-    "title": "My Hero Academia Plus Ultra Battle Mirio Togata figura 6cm",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/pokemon-sword-shield-charizard-ultra-premium-collection": {
-    "available": false,
-    "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
-    "available": false,
-    "title": "Pokemon 151 Ultra Premium Collection",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
-    "available": false,
-    "title": "Pokemon Cynthia's Garchomp ex Premium Collection",
-    "store": "Dabas",
-    "checked": "2026-07-03T21:33:34"
-  },
-  "https://poke-power.eu/products/pokemon-mega-venusaur-ex-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Mega Venusaur ex Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-mega-charizard-ultra-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Mega Charizard Ultra Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-cynthias-garchomp-ex-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Cynthia's Garchomp ex Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-scarlet-violet-prismatic-evolutions-super-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Scarlet & Violet Prismatic Evolutions Super-Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-ionos-bellibolt-ex-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Iono's Bellibolt ex Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-scarlet-violet-151-blooming-waters-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Scarlet & Violet 151 Blooming Waters Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-terapagos-ex-ultra-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Terapagos ex Ultra-Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-charizard-ex-super-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Charizard ex Super Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/psa-10-paldea-evolved-slowking-ex-pal238": {
-    "available": false,
-    "title": "2023 Pokémon Paldea Evolved Slowking EX Ultra Rare PSA 10",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/one-piece-card-game-the-three-brothers-ultra-starter-deck-st-13": {
-    "available": false,
-    "title": "One Piece - The Three Brothers Ultra Starter Deck [ST-13]",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-armarouge-ex-premium-collection-box": {
-    "available": false,
-    "title": "Pokemon - Armarouge ex Premium Collection Box",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-combined-powers-premium-collection": {
-    "available": false,
-    "title": "Pokemon - Combined Powers Premium Collection",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-scarlet-violet-paldean-fates-premium-collection-ex": {
-    "available": false,
-    "title": "Pokemon - Scarlet & Violet Paldean Fates Premium Collection ex",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-charizard-ex-premium-collection-box": {
-    "available": false,
-    "title": "Pokemon - Charizard ex Premium Collection Box",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-scarlet-violet-151-ultra-premium-collection-mew": {
-    "available": false,
-    "title": "Pokemon - Scarlet & Violet 151 Ultra Premium Collection Mew",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-ultra-premium-collection-charizard": {
-    "available": false,
-    "title": "Pokemon - Ultra Premium Collection Charizard",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  },
-  "https://poke-power.eu/products/pokemon-tcg-pokemon-go-premium-collection-radiant-eevee": {
-    "available": false,
-    "title": "Pokemon - Pokémon Go Premium Collection Radiant Eevee",
-    "store": "PokePower",
-    "checked": "2026-07-03T21:33:39"
-  }
-}
+name: TCG stock monitor
+
+on:
+  schedule:
+    - cron: "3-59/10 * * * *"  # :03,:13,:23... — off-peak minutes get skipped less by GitHub
+                               # (use "0 * * * *" hourly on a PRIVATE repo to stay in free minutes)
+  workflow_dispatch: {}       # adds a "Run workflow" button so you can test manually
+
+permissions:
+  contents: write             # lets the job save monitor_state.json back to the repo
+
+concurrency:
+  group: stock-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run one stock check across all shops
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # For email alerts: set EMAIL_ENABLED = True in the script and add these repo secrets too:
+          # SMTP_USER: ${{ secrets.SMTP_USER }}
+          # SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          # EMAIL_TO:  ${{ secrets.EMAIL_TO }}
+        run: python stock_monitor.py --once
+
+      - name: Save state (prevents duplicate alerts)
+        run: |
+          git config user.name "stock-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add monitor_state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update stock state"
+            git pull --rebase
+            git push
+          fi
