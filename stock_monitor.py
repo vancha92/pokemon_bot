@@ -167,6 +167,10 @@ STORES = [
 # (handy for catching listings the second they appear).
 ALERT_ON_NEW_LISTING = False
 
+# Send a "still alive" Discord/email message this often, so you can tell
+# "nothing new in stock" apart from "the bot stopped running". 0 = off.
+HEARTBEAT_HOURS = 24
+
 LISTING_PAGES = 2            # ?page=2... for stores with "paginate": True
 MAX_PAGE_CHECKS = 25         # per store per cycle, keeps things polite
 CHECK_EVERY_SECONDS = 300    # 5 minutes. Please keep this >= 60.
@@ -187,7 +191,14 @@ EMAIL_TO = os.getenv("EMAIL_TO", "you@gmail.com")          # where alerts should
 # =========================================================================
 
 STATE_FILE = Path(__file__).with_name("monitor_state.json")
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; stock-notifier/2.0; personal use)"}
+# Standard browser-style headers: some shop firewalls indiscriminately reject
+# anything that doesn't look like a regular browser.
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.8,el;q=0.6",
+}
 TIMEOUT = 25
 
 # non-product paths ignored when a store has no product_needle
@@ -304,7 +315,7 @@ def harvest_links(page_html: str, base: str, needle) -> list:
             if not any(n in path for n in needles):
                 continue
         else:
-            if path in ("", "/") or any(x in path for x in SKIP_PATHS):
+            if path in ("", "/") or "=" in path or any(x in path for x in SKIP_PATHS):
                 continue
         clean = href.split("?")[0].split("#")[0].rstrip("/")
         text = a.get_text(" ", strip=True)
@@ -618,6 +629,26 @@ def run_check(state: dict) -> dict:
                 "store": store["name"],
                 "checked": datetime.now().isoformat(timespec="seconds"),
             }
+
+    # daily proof-of-life message (also keeps the repo active on GitHub)
+    if HEARTBEAT_HOURS:
+        meta = state.get("_meta", {})
+        due = True
+        if meta.get("last_heartbeat"):
+            try:
+                elapsed = (datetime.now() - datetime.fromisoformat(meta["last_heartbeat"])).total_seconds()
+                due = elapsed >= HEARTBEAT_HOURS * 3600
+            except ValueError:
+                due = True
+        if due:
+            tracked = [v for k, v in state.items() if not k.startswith("_")]
+            in_stock = sum(1 for v in tracked if v.get("available"))
+            notify("💓 Monitor heartbeat",
+                   f"Still watching {len(STORES)} shops.\n"
+                   f"Tracking {len(tracked)} matching product(s), {in_stock} currently in stock.\n"
+                   f"Watches: {KEYWORD_GROUPS}")
+            meta["last_heartbeat"] = datetime.now().isoformat(timespec="seconds")
+            state["_meta"] = meta
 
     try:
         STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
