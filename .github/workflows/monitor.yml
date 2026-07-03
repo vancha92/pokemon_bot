@@ -1,0 +1,47 @@
+name: TCG stock monitor
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 min (use "0 * * * *" hourly on a PRIVATE repo to stay in free minutes)
+  workflow_dispatch: {}       # adds a "Run workflow" button so you can test manually
+
+permissions:
+  contents: write             # lets the job save monitor_state.json back to the repo
+
+concurrency:
+  group: stock-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run one stock check across all shops
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # For email alerts: set EMAIL_ENABLED = True in the script and add these repo secrets too:
+          # SMTP_USER: ${{ secrets.SMTP_USER }}
+          # SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          # EMAIL_TO:  ${{ secrets.EMAIL_TO }}
+        run: python stock_monitor.py --once
+
+      - name: Save state (prevents duplicate alerts)
+        run: |
+          git config user.name "stock-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add monitor_state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update stock state"
+            git pull --rebase
+            git push
+          fi
