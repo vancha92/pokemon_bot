@@ -103,23 +103,6 @@ STORES = [
         "paginate": True,          # Squarespace supports ?page=2
     },
     {
-        "name": "Mythic Vault",
-        "base": "https://mythicvault.com",
-        "type": "woocommerce",
-        "listings": [],
-        "product_needle": "/product/",
-    },
-    {
-        "name": "Buzzer",
-        "base": "https://buzzer.gr",
-        "type": "woocommerce",
-        "listings": [
-            "/product-category/nees-afixeis/",      # new arrivals / restocks
-            "/product-category/proparangelies/",    # preorders
-        ],
-        "product_needle": "/product/",
-    },
-    {
         "name": "Gamescape",
         "base": "https://gamescape.gr",
         "type": "woocommerce",
