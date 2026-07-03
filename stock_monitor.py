@@ -10,6 +10,8 @@ Discord webhook and/or email the moment one is in stock (or preorderable):
   * Buzzer        (buzzer.gr, WooCommerce)
   * Gamescape     (gamescape.gr, WooCommerce)
   * eFantasy      (efantasy.gr, custom platform)
+  * Dabas         (dabas.hr, WooCommerce, Croatian)
+  * PokePower     (poke-power.eu, Shopify, Slovenian)
 
 Keyword matching is fuzzy:
   * case- and accent-insensitive ("pokemon" matches "Pokémon", Greek accents too)
@@ -140,6 +142,25 @@ STORES = [
         ],
         "product_needle": None,
     },
+    {
+        "name": "Dabas",
+        "base": "https://dabas.hr",
+        "type": "woocommerce",
+        "listings": [
+            "/product-category/8/8-tcg/",           # Pokemon TCG category
+        ],
+        "product_needle": ["/product/", "/proizvod/"],
+    },
+    {
+        "name": "PokePower",
+        "base": "https://poke-power.eu",
+        "type": "shopify",
+        "currency": "EUR",
+        "listings": [
+            "/collections/elite-trainer-box",       # used only if products.json is blocked
+        ],
+        "product_needle": "/products/",
+    },
 ]
 
 # Also alert when a NEW matching product gets listed even if it's sold out
@@ -175,10 +196,16 @@ SKIP_PATHS = ("/search-results", "/product-category", "/cart", "/my-account",
               "/tag/", "/page/", "/checkout", "/σύνδεση", "/καλάθι",
               "/συχνές", "/αρχική", "/συνδρομές", "/gift-cards", "/login")
 
-# visible-text availability hints (last-resort layer; Greek is accent-stripped)
+# visible-text availability hints (last-resort layer; accents are stripped,
+# so these cover Greek, Croatian and Slovenian wording too)
 NEG_TEXT = ("sold out", "out of stock", "currently unavailable",
-            "εξαντλη", "μη διαθεσιμ", "δεν ειναι διαθεσιμ")
-POS_TEXT = ("add to cart", "add to basket", "προσθηκη στο καλαθι")
+            "εξαντλη", "μη διαθεσιμ", "δεν ειναι διαθεσιμ",          # Greek
+            "rasprodano", "nema na zalihi", "nije dostupno",         # Croatian
+            "razprodano", "ni na zalogi")                            # Slovenian
+POS_TEXT = ("add to cart", "add to basket",
+            "προσθηκη στο καλαθι",                                   # Greek
+            "dodaj u kosaricu",                                      # Croatian
+            "dodaj v kosarico")                                      # Slovenian
 
 
 def log(msg: str) -> None:
@@ -272,8 +299,9 @@ def harvest_links(page_html: str, base: str, needle) -> list:
         if u.scheme not in ("http", "https") or u.netloc.replace("www.", "") != host:
             continue
         path = unquote(u.path)
-        if needle:
-            if needle not in path:
+        needles = [needle] if isinstance(needle, str) else (needle or [])
+        if needles:
+            if not any(n in path for n in needles):
                 continue
         else:
             if path in ("", "/") or any(x in path for x in SKIP_PATHS):
@@ -392,6 +420,41 @@ def woo_api_products(store: dict, query: str) -> list:
     return out
 
 
+def shopify_catalog(store: dict) -> list:
+    """Shopify storefront catalog: /products.json includes live variant stock."""
+    base = store["base"].rstrip("/")
+    out, page = [], 1
+    while page <= 8:                              # up to 2000 products
+        r = requests.get(f"{base}/products.json", params={"limit": 250, "page": page},
+                         headers=HEADERS, timeout=TIMEOUT)
+        if r.status_code != 200:
+            raise RuntimeError(f"HTTP {r.status_code}")
+        data = r.json()
+        batch = data.get("products")
+        if not isinstance(batch, list):
+            raise RuntimeError("unexpected payload")
+        if not batch:
+            break
+        for p in batch:
+            variants = p.get("variants") or []
+            price = ""
+            for v in variants:
+                if v.get("price"):
+                    price = f"{v['price']} {store.get('currency', '')}".strip()
+                    break
+            out.append({
+                "url": f"{base}/products/{p.get('handle', '')}".rstrip("/"),
+                "title": html_lib.unescape(p.get("title") or ""),
+                "available": any(v.get("available") for v in variants),
+                "price": price,
+            })
+        if len(batch) < 250:
+            break
+        page += 1
+        time.sleep(REQUEST_DELAY)
+    return out
+
+
 def gather_store(store: dict, queries: list) -> list:
     """Return matching products for one store: [{url,title,available,price}].
     `available` may be None -> needs no further info but is treated as not-in-stock."""
@@ -400,8 +463,18 @@ def gather_store(store: dict, queries: list) -> list:
     results = {}          # url -> product dict (availability already known)
     pool = {}             # url -> hint text  (needs a product-page fetch)
 
-    # a) WooCommerce Store API (best case: titles AND stock in one JSON call)
+    # a) Shopify catalog JSON (best case: the whole catalog with live stock)
     api_ok = False
+    if store["type"] == "shopify":
+        try:
+            for p in shopify_catalog(store):
+                if p["url"] and matches(p["title"]):
+                    results[p["url"]] = p
+            api_ok = True
+        except Exception as e:
+            log(f"{store['name']}: products.json unavailable ({e}); falling back to HTML search.")
+
+    # b) WooCommerce Store API (titles AND stock in one JSON call)
     if store["type"] == "woocommerce":
         api_ok = True
         for q in queries:
@@ -415,10 +488,12 @@ def gather_store(store: dict, queries: list) -> list:
                 break
             time.sleep(REQUEST_DELAY)
 
-    # b) HTML search (WooCommerce fallback, or "search"-type stores)
+    # c) HTML search (fallbacks, or "search"-type stores)
     search_tpl = None
     if store["type"] == "woocommerce" and not api_ok:
         search_tpl = "/?s={q}&post_type=product"
+    elif store["type"] == "shopify" and not api_ok:
+        search_tpl = "/search?q={q}"
     elif store["type"] == "search":
         search_tpl = store["search"]
     if search_tpl:
