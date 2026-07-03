@@ -57,6 +57,7 @@ from bs4 import BeautifulSoup
 KEYWORD_GROUPS = [
     ["30th", "etb"],
     ["30th", "elite"],
+    ["30th", "ultra"],
     ["upc"],
     ["ultra"],
     ["30th", "bundle"]
