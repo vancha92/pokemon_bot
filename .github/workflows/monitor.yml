@@ -2,7 +2,8 @@ name: TCG stock monitor
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 min (use "0 * * * *" hourly on a PRIVATE repo to stay in free minutes)
+    - cron: "3-59/10 * * * *"  # :03,:13,:23... — off-peak minutes get skipped less by GitHub
+                               # (use "0 * * * *" hourly on a PRIVATE repo to stay in free minutes)
   workflow_dispatch: {}       # adds a "Run workflow" button so you can test manually
 
 permissions:
