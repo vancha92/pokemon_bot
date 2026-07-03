@@ -135,10 +135,16 @@ STORES = [
         "name": "eFantasy",
         "base": "https://www.efantasy.gr",
         "type": "search",
-        "search": "/el/search-results?αναζήτηση={q}",
+        "search": "/el/προϊόντα/αναζήτηση={q}/sort=score",
         "listings": [
+            "/el/προϊόντα/pokemon-tcg/sc-3510-30th-celebration",   # 30th Celebration category
             "/el/προϊόντα/νέες-αφίξεις",            # new arrivals
             "/el/προϊόντα/preorders",               # preorders
+        ],
+        # exact product pages that are ALWAYS checked (keywords not required):
+        "products": [
+            "/el/προϊόντα/pokemon-tcg/414108-pokemon-tcg-30th-celebration-ultra-premium-collection",
+            "/el/προϊόντα/pokemon-tcg/414099-pokemon-tcg-30th-celebration-elite-trainer-box",
         ],
         "product_needle": None,
     },
@@ -217,6 +223,15 @@ POS_TEXT = ("add to cart", "add to basket",
             "προσθηκη στο καλαθι",                                   # Greek
             "dodaj u kosaricu",                                      # Croatian
             "dodaj v kosarico")                                      # Slovenian
+
+# An open preorder counts as "in stock" — that's the moment to act on hyped
+# products. Remove entries here if you only want alerts for shelf stock.
+PREORDER_TEXT = ("pre-order", "προ-παραγγελια")
+
+# "You may also like" sections show OTHER products' buy buttons and stock —
+# text-based detection only looks at the page before these markers.
+RELATED_MARKERS = ("ισως να θελεις", "σχετικα προιοντα",
+                   "you may also like", "related products")
 
 
 def log(msg: str) -> None:
@@ -334,10 +349,11 @@ def parse_product_page(page_html: str, url: str) -> dict:
     title = meta("og:title") or (soup.title.string.strip() if soup.title and soup.title.string else "")
     site = meta("og:site_name")
     if site and title:
-        title = re.sub(rf"\s*[\|\-–—]\s*{re.escape(site)}.*$", "", title, flags=re.I).strip()
-    title = title or url
-    price = meta("product:sale_price:amount") or meta("product:price:amount")
-    currency = meta("product:price:currency")
+        title = re.sub(rf"\s*[\|\-–—]\s*{re.escape(site)}.*$", "", title, flags=re.I)
+    title = re.sub(r"\s+", " ", title).strip() or url
+    price = (meta("product:sale_price:amount") or meta("product:price:amount")
+             or meta("og:price:amount"))
+    currency = meta("product:price:currency") or meta("og:price:currency")
 
     available = None
 
@@ -383,11 +399,23 @@ def parse_product_page(page_html: str, url: str) -> dict:
                 or "single_add_to_cart_button" in page_html:
             available = True
 
-    # 4) visible text, English + Greek (negatives first: "μη διαθέσιμο"
-    #    contains "διαθέσιμο", so order matters)
+    # 4) visible text, English/Greek/Croatian/Slovenian — only the part of the
+    #    page BEFORE any "you may also like" section (which contains other
+    #    products' buy buttons); negatives first ("μη διαθέσιμο" contains
+    #    "διαθέσιμο", so order matters)
     if available is None:
         text = norm(soup.get_text(" ", strip=True))
-        if any(x in text for x in NEG_TEXT):
+        for marker in RELATED_MARKERS:
+            idx = text.find(marker)
+            if idx != -1:
+                text = text[:idx]
+                break
+        stock_count = re.search(r"διαθεσιμα:\s*([0-9]+)\s*\+?", text)
+        if any(x in text for x in PREORDER_TEXT):
+            available = True                       # open preorder = buyable now
+        elif stock_count:
+            available = int(stock_count.group(1)) > 0
+        elif any(x in text for x in NEG_TEXT):
             available = False
         elif any(x in text for x in POS_TEXT):
             available = True
@@ -560,6 +588,21 @@ def gather_store(store: dict, queries: list) -> list:
         results[purl] = {"url": purl, **info}
     if len(candidates) > MAX_PAGE_CHECKS:
         log(f"{store['name']}: {len(candidates) - MAX_PAGE_CHECKS} candidates skipped (MAX_PAGE_CHECKS)")
+
+    # e) explicitly watched product URLs (always checked, keywords not required)
+    for purl in store.get("products", []):
+        purl = (base + purl if purl.startswith("/") else purl).split("?")[0].rstrip("/")
+        if purl in results:
+            continue
+        time.sleep(REQUEST_DELAY)
+        try:
+            info = parse_product_page(get(purl).text, purl)
+        except Exception as e:
+            log(f"{store['name']}: could not check watched product {purl}: {e}")
+            continue
+        if info["available"] is None:
+            log(f"{store['name']}: availability unknown for {purl}")
+        results[purl] = {"url": purl, **info}
 
     log(f"{store['name']}: {len(results)} matching product(s) this cycle.")
     return list(results.values())
