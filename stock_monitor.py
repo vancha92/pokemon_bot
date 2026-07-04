@@ -12,6 +12,7 @@ Discord webhook and/or email the moment one is in stock (or preorderable):
   * eFantasy      (efantasy.gr, custom platform)
   * Dabas         (dabas.hr, WooCommerce, Croatian)
   * PokePower     (poke-power.eu, Shopify, Slovenian)
+  * Dragonfire    (dragonfirecollectibles.com, WooCommerce, Greek)
 
 Keyword matching is fuzzy:
   * case- and accent-insensitive ("pokemon" matches "Pokémon", Greek accents too)
@@ -57,10 +58,8 @@ from bs4 import BeautifulSoup
 KEYWORD_GROUPS = [
     ["30th", "etb"],
     ["30th", "elite"],
-    ["30th", "ultra"],
     ["upc"],
     ["ultra"],
-    ["30th", "bundle"]
 ]
 
 # Products whose title contains any of these are NEVER alerted.
@@ -68,10 +67,7 @@ KEYWORD_GROUPS = [
 # you for every Ultra PRO sleeve/binder/deck box. Remove it if you want those.
 EXCLUDE_TERMS = [
     "ultra pro",
-    "ultra clear",
-    "dragon ball",
-    "warhammer",
-    "funko",
+    "ultraman",
 ]
 
 # Abbreviations the matcher expands automatically (works in both directions;
@@ -102,6 +98,23 @@ STORES = [
         "listings": ["/", "/shop/pokemon"],
         "product_needle": "/shop/p/",
         "paginate": True,          # Squarespace supports ?page=2
+    },
+    {
+        "name": "Mythic Vault",
+        "base": "https://mythicvault.com",
+        "type": "woocommerce",
+        "listings": [],
+        "product_needle": "/product/",
+    },
+    {
+        "name": "Buzzer",
+        "base": "https://buzzer.gr",
+        "type": "woocommerce",
+        "listings": [
+            "/product-category/nees-afixeis/",      # new arrivals / restocks
+            "/product-category/proparangelies/",    # preorders
+        ],
+        "product_needle": "/product/",
     },
     {
         "name": "Gamescape",
@@ -150,6 +163,17 @@ STORES = [
             "/collections/elite-trainer-box",       # used only if products.json is blocked
         ],
         "product_needle": "/products/",
+    },
+    {
+        "name": "Dragonfire",
+        "base": "https://dragonfirecollectibles.com",
+        "type": "woocommerce",
+        "listings": [
+            "/product-category/tcg/pokemon/elite-trainer-box/",
+            "/product-category/tcg/pokemon/boxes/",
+            "/product-category/tcg/pokemon/booster-boxes/",
+        ],
+        "product_needle": "/product/",
     },
 ]
 
@@ -418,8 +442,7 @@ def woo_api_products(store: dict, query: str) -> list:
     url = store["base"].rstrip("/") + "/wp-json/wc/store/v1/products"
     r = requests.get(url, params={"search": query, "per_page": 50},
                      headers=HEADERS, timeout=TIMEOUT)
-    if r.status_code != 200:
-        raise RuntimeError(f"HTTP {r.status_code}")
+    r.raise_for_status()
     data = r.json()
     if not isinstance(data, list):
         raise RuntimeError("unexpected payload")
@@ -526,6 +549,13 @@ def gather_store(store: dict, queries: list) -> list:
                 for purl, text in harvest_links(get(url).text, base, needle):
                     if purl not in results:
                         pool[purl] = (pool.get(purl, "") + " " + text).strip()
+            except requests.HTTPError as e:
+                code = e.response.status_code if e.response is not None else 0
+                if code in (401, 403, 429, 503):
+                    log(f"{store['name']}: blocking automated requests (HTTP {code}) — "
+                        f"skipping this shop for this cycle.")
+                    return list(results.values())
+                log(f"{store['name']}: search failed for '{q}': {e}")
             except Exception as e:
                 log(f"{store['name']}: search failed for '{q}': {e}")
             time.sleep(REQUEST_DELAY)
@@ -650,12 +680,18 @@ def run_check(state: dict) -> dict:
                 notify(f"👀 New listing at {store['name']} (not in stock yet): {info['title']}",
                        f"{info['price']}\n{url}")
 
-            state[url] = {
+            entry = {
                 "available": now_available,
                 "title": info["title"],
                 "store": store["name"],
-                "checked": datetime.now().isoformat(timespec="seconds"),
+                "price": info.get("price", ""),
             }
+            old = {k: v for k, v in (prev or {}).items() if k not in ("since", "checked")}
+            if old != entry:
+                entry["since"] = datetime.now().isoformat(timespec="seconds")
+                state[url] = entry
+            # unchanged entries are left untouched -> no timestamp churn,
+            # no commit, no chance of two runs conflicting over the state file
 
     # daily proof-of-life message (also keeps the repo active on GitHub)
     if HEARTBEAT_HOURS:
@@ -678,7 +714,9 @@ def run_check(state: dict) -> dict:
             state["_meta"] = meta
 
     try:
-        STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
+        new_blob = json.dumps(state, indent=2, ensure_ascii=False)
+        if not STATE_FILE.exists() or STATE_FILE.read_text() != new_blob:
+            STATE_FILE.write_text(new_blob)
     except OSError as e:
         log(f"Could not save state file: {e}")
     return state
