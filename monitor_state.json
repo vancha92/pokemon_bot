@@ -351,5 +351,12 @@
     "store": "Dragonfire",
     "price": "59.99 EUR",
     "since": "2026-07-04T09:12:11"
+  },
+  "https://www.fantasy-shop.gr/en/terapagos-ex-ultra-premium-collection.html": {
+    "available": false,
+    "title": "Terapagos Ex Ultra Premium Collection",
+    "store": "Fantasy Shop",
+    "price": "180 EUR",
+    "since": "2026-07-04T09:22:35"
   }
 }
