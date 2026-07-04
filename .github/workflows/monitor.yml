@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main            # always start from the latest state, not the commit that triggered the run
 
       - uses: actions/setup-python@v6
         with:
@@ -41,8 +43,17 @@ jobs:
           git config user.name "stock-monitor-bot"
           git config user.email "actions@users.noreply.github.com"
           git add monitor_state.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update stock state"
-            git pull --rebase
-            git push
+          if git diff --cached --quiet; then
+            echo "No state changes this run."
+            exit 0
           fi
+          git commit -m "Update stock state"
+          n=0
+          until git pull --rebase -X theirs && git push; do
+            n=$((n+1))
+            if [ "$n" -ge 3 ]; then
+              echo "Could not push state after 3 attempts"
+              exit 1
+            fi
+            sleep 5
+          done
