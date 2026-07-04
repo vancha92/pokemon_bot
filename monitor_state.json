@@ -358,5 +358,215 @@
     "store": "Fantasy Shop",
     "price": "180 EUR",
     "since": "2026-07-04T09:22:35"
+  },
+  "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Collection": {
+    "available": false,
+    "title": "Pokemon 151 Ultra Premium Collection Englisch, 799,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:57"
+  },
+  "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Kollektion-Deutsch": {
+    "available": false,
+    "title": "Pokemon 151 Ultra Premium Kollektion (Deutsch), 649,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:57"
+  },
+  "https://www.card-corner.de/Pokemon-30-Jahre-Ultra-Premium-Kollektion": {
+    "available": true,
+    "title": "Pokemon 30 Jahre Ultra Premium Kollektion",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:57"
+  },
+  "https://www.card-corner.de/Pokemon-30th-Celebration-Booster-Bundle": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Booster Bundle",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-30th-Celebration-Elite-Trainer-Box": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Elite Trainer Box",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-30th-Celebration-Ultra-Premium-Collection": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Ultra Premium Collection",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-Celebration-Ultra-Premium-Kollektion-Deutsch": {
+    "available": false,
+    "title": "Pokemon Celebration Ultra Premium Kollektion (Deutsch), 699,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-Celebrations-Ultra-Premium-Collection": {
+    "available": true,
+    "title": "Celebrations Ultra Premium Collection Englisch, 1.099,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-Fatale-Flammen-Ultra-Premium-Kollektion": {
+    "available": false,
+    "title": "Pokemon Mega Glurak X ex - Ultra Premium Kollektion, 179,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:58"
+  },
+  "https://www.card-corner.de/Pokemon-Greninja-EX-Ultra-Premium-Collection-Englisch": {
+    "available": true,
+    "title": "Pokemon Greninja EX - Ultra Premium Collection (Englisch), 359,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Lugia-EX-Latias-EX-Premium-Collection": {
+    "available": true,
+    "title": "Pokemon Lugia EX & Latias EX Premium Collection, 129,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Phantasmal-Flames-UPC-Promos": {
+    "available": false,
+    "title": "Pokemon Phantasmal Flames UPC Promos (Englisch), 59,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Phantasmal-Flames-Ultra-Premium-Collection": {
+    "available": false,
+    "title": "Pokemon Mega Charizard X ex - Ultra Premium Collection, 239,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Prismatic-Evolutions-Super-Premium-Collection-Englisch": {
+    "available": true,
+    "title": "Pokemon Prismatic Evolutions - Super Premium Collection, 369,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Team-Rockets-Moltres-EX-Ultra-Premium-Collection": {
+    "available": false,
+    "title": "Team Rockets Moltres EX Ultra Premium Collection, 349,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Terapagos-EX-Ultra-Premium-Collection-Englisch": {
+    "available": false,
+    "title": "Pokemon Terapagos EX - Ultra Premium Collection (Englisch), 99,49 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Terapagos-EX-Ultra-Premium-Kollektion-Deutsch": {
+    "available": false,
+    "title": "Pokemon Terapagos EX - Ultra Premium Kollektion (Deutsch), 122,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Ultra-Premium-Collection-Charizard": {
+    "available": true,
+    "title": "Pokemon Ultra Premium Collection Charizard, 594,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://www.card-corner.de/Pokemon-Ultra-Premium-Kollektion-Glurak": {
+    "available": false,
+    "title": "Pokemon Ultra Premium Kollektion Glurak, 399,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-04T09:33:59"
+  },
+  "https://cardbuddys.de/products/pokemon-go-eevee-premium-collection-en": {
+    "available": false,
+    "title": "Pokemon GO Eevee Premium Collection EN",
+    "store": "CardBuddys",
+    "price": "49.95 EUR",
+    "since": "2026-07-04T09:34:04"
+  },
+  "https://cardbuddys.de/products/acryl-case-f-r-pokemon-ultra-premium-collection-box-charizard": {
+    "available": true,
+    "title": "Acryl Case für Pokemon Ultra Premium Collection Box (Charizard)",
+    "store": "CardBuddys",
+    "price": "42.95 EUR",
+    "since": "2026-07-04T09:34:05"
+  },
+  "https://cardbuddys.de/products/acryl-case-f-r-pokemon-ultra-premium-collection-box-151": {
+    "available": true,
+    "title": "Acryl Case für Pokemon Ultra Premium Collection Box (151)",
+    "store": "CardBuddys",
+    "price": "44.95 EUR",
+    "since": "2026-07-04T09:34:05"
+  },
+  "https://cardbuddys.de/products/acryl-case-f-r-pokemon-super-premium-collection-prismatic-evolution": {
+    "available": true,
+    "title": "Acryl Case für Pokemon Super Premium Collection (Prismatic Evolution)",
+    "store": "CardBuddys",
+    "price": "39.95 EUR",
+    "since": "2026-07-04T09:34:05"
+  },
+  "https://tcgviert.com/products/pokemon-tcg-salamence-ex-reshiram-ex-premium-collection-en-limit-1-kunde": {
+    "available": true,
+    "title": "Pokémon TCG | Salamence ex & Reshiram ex | Premium Collection (EN) (Limit: 1/Kunde)",
+    "store": "TCGviert",
+    "price": "109.99 EUR",
+    "since": "2026-07-04T09:34:12"
+  },
+  "https://kofuku.de/products/pokemon-mythical-squishy-premium-collection-englisch": {
+    "available": false,
+    "title": "Pokemon Mythical Squishy Premium Collection (englisch)",
+    "store": "Kofuku",
+    "price": "280.00 EUR",
+    "since": "2026-07-04T09:34:25"
+  },
+  "https://kofuku.de/products/pokemon-reshiram-charizard-premium-collection-englisch": {
+    "available": false,
+    "title": "Pokemon Reshiram & Charizard premium Collection (Englisch)",
+    "store": "Kofuku",
+    "price": "300.00 EUR",
+    "since": "2026-07-04T09:34:25"
+  },
+  "https://kofuku.de/products/pokemon-celebration-ultra-premium-collection-englisch": {
+    "available": false,
+    "title": "Pokémon Celebration Ultra Premium Collection (Englisch)",
+    "store": "Kofuku",
+    "price": "960.00 EUR",
+    "since": "2026-07-04T09:34:25"
+  },
+  "https://kofuku.de/products/pokemon-schwert-schild-glurak-ultra-premium-kollektion-deutsch": {
+    "available": false,
+    "title": "Pokémon Schwert & Schild Glurak Ultra Premium Kollektion (deutsch)",
+    "store": "Kofuku",
+    "price": "369.99 EUR",
+    "since": "2026-07-04T09:34:25"
+  },
+  "https://kofuku.de/products/one-piece-roronoa-zoro-dxf-egghead-figur-banpresto-17cm-kopie": {
+    "available": false,
+    "title": "Detective Conan - Rei Furuya - Premium Chokonose Figur SEGA 19cm",
+    "store": "Kofuku",
+    "price": "24.99 EUR",
+    "since": "2026-07-04T09:34:25"
+  },
+  "https://kofuku.de/products/pokemon-cynthia-s-garchomp-ex-premium-collection-englisch": {
+    "available": false,
+    "title": "Pokémon Cynthia`s Garchomp ex Premium Collection (Englisch)",
+    "store": "Kofuku",
+    "price": "60.00 EUR",
+    "since": "2026-07-04T09:34:25"
   }
 }
