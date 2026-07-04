@@ -3,163 +3,190 @@
     "available": true,
     "title": "Mega Charizard X ex Ultra Premium Collection",
     "store": "Black Flame",
-    "checked": "2026-07-04T09:00:50"
+    "price": "249.99 EUR",
+    "since": "2026-07-04T09:10:41"
   },
   "https://dabas.hr/product/dbs-dragon-stars-ultra-instinct-goku-figura-17cm": {
     "available": true,
     "title": "DBS Dragon Stars Ultra Instinct Goku figura 17cm",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "27.50 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/pokemon-ultra-ball-plisana-igracka-12cm": {
     "available": true,
     "title": "Pokemon Ultra Ball plišana igračka 12cm",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "12.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/dbs-limit-breaker-ultra-instinct-goku-figura-30cm": {
     "available": true,
     "title": "DBS Limit Breaker Ultra Instinct Goku figura 30cm",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "24.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/pokemon-mega-charizard-x-ex-ultra-premium-collection": {
     "available": true,
     "title": "Pokemon Mega Charizard X ex Ultra Premium Collection",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "249.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/dbs-goku-ultra-instinct-match-makers-figura-13cm": {
     "available": true,
     "title": "DBS Goku Ultra Instinct Match Makers figura 13cm",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "44.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/my-hero-academia-plus-ultra-battle-mirio-togata-figura-6cm": {
     "available": false,
     "title": "My Hero Academia Plus Ultra Battle Mirio Togata figura 6cm",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "9.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/pokemon-sword-shield-charizard-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "129.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon 151 Ultra Premium Collection",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "149.95 EUR",
+    "since": "2026-07-04T09:11:42"
   },
   "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
     "title": "Pokemon Cynthia's Garchomp ex Premium Collection",
     "store": "Dabas",
-    "checked": "2026-07-04T09:01:47"
+    "price": "",
+    "since": "2026-07-04T09:11:42"
   },
   "https://poke-power.eu/products/pokemon-mega-venusaur-ex-premium-collection": {
     "available": false,
     "title": "Pokemon - Mega Venusaur ex Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "54.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-mega-charizard-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon - Mega Charizard Ultra Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "209.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
     "title": "Pokemon - Cynthia's Garchomp ex Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "39.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-scarlet-violet-prismatic-evolutions-super-premium-collection": {
     "available": false,
     "title": "Pokemon - Scarlet & Violet Prismatic Evolutions Super-Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "254.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-ionos-bellibolt-ex-premium-collection": {
     "available": false,
     "title": "Pokemon - Iono's Bellibolt ex Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "39.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-scarlet-violet-151-blooming-waters-premium-collection": {
     "available": false,
     "title": "Pokemon - Scarlet & Violet 151 Blooming Waters Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "374.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-terapagos-ex-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon - Terapagos ex Ultra-Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "124.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-charizard-ex-super-premium-collection": {
     "available": false,
     "title": "Pokemon - Charizard ex Super Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "89.99 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/psa-10-paldea-evolved-slowking-ex-pal238": {
     "available": false,
     "title": "2023 Pokémon Paldea Evolved Slowking EX Ultra Rare PSA 10",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "40.00 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/one-piece-card-game-the-three-brothers-ultra-starter-deck-st-13": {
     "available": false,
     "title": "One Piece - The Three Brothers Ultra Starter Deck [ST-13]",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "44.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-armarouge-ex-premium-collection-box": {
     "available": false,
     "title": "Pokemon - Armarouge ex Premium Collection Box",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "44.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-combined-powers-premium-collection": {
     "available": false,
     "title": "Pokemon - Combined Powers Premium Collection",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "59.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-scarlet-violet-paldean-fates-premium-collection-ex": {
     "available": false,
     "title": "Pokemon - Scarlet & Violet Paldean Fates Premium Collection ex",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "47.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-charizard-ex-premium-collection-box": {
     "available": false,
     "title": "Pokemon - Charizard ex Premium Collection Box",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "44.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-scarlet-violet-151-ultra-premium-collection-mew": {
     "available": false,
     "title": "Pokemon - Scarlet & Violet 151 Ultra Premium Collection Mew",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "119.95 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-ultra-premium-collection-charizard": {
     "available": false,
     "title": "Pokemon - Ultra Premium Collection Charizard",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "139.95 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "https://poke-power.eu/products/pokemon-tcg-pokemon-go-premium-collection-radiant-eevee": {
     "available": false,
     "title": "Pokemon - Pokémon Go Premium Collection Radiant Eevee",
     "store": "PokePower",
-    "checked": "2026-07-04T09:01:52"
+    "price": "49.90 EUR",
+    "since": "2026-07-04T09:11:47"
   },
   "_meta": {
     "last_heartbeat": "2026-07-03T21:41:24"
@@ -168,24 +195,161 @@
     "available": false,
     "title": "Evoretro - PET Protector For 151 Ultra Premium Collection Pokemon (2-Pack)",
     "store": "eFantasy",
-    "checked": "2026-07-04T09:01:38"
+    "price": "9 EUR",
+    "since": "2026-07-04T09:11:31"
   },
   "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/414099-pokemon-tcg-30th-celebration-elite-trainer-box": {
     "available": false,
     "title": "Pokemon TCG 30th Celebration - Elite Trainer Box",
     "store": "eFantasy",
-    "checked": "2026-07-04T09:01:38"
+    "price": "99 EUR",
+    "since": "2026-07-04T09:11:31"
   },
   "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/414105-pokemon-tcg-30th-celebration-booster-bundle": {
     "available": false,
     "title": "Pokemon TCG 30th Celebration - Booster Bundle",
     "store": "eFantasy",
-    "checked": "2026-07-04T09:01:38"
+    "price": "59 EUR",
+    "since": "2026-07-04T09:11:31"
   },
   "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/414108-pokemon-tcg-30th-celebration-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon TCG 30th Celebration - Ultra-Premium Collection",
     "store": "eFantasy",
-    "checked": "2026-07-04T09:01:38"
+    "price": "249 EUR",
+    "since": "2026-07-04T09:11:31"
+  },
+  "https://gamescape.gr/shop/tcg-accessories/sleeves/standard-art-sleeves/dragon-ball-super-card-game-fusion-world-card-goku-ultra-instinct-sleeves-vol-4": {
+    "available": true,
+    "title": "Dragon Ball Super Card Game: Fusion World Card Goku Ultra Instinct Sleeves Vol. 4",
+    "store": "Gamescape",
+    "price": "10.00 EUR",
+    "since": "2026-07-04T09:10:57"
+  },
+  "https://gamescape.gr/en/shop/tcg-accessories/sleeves/standard-art-sleeves/dragon-ball-super-card-game-fusion-world-card-goku-ultra-instinct-sleeves-vol-4": {
+    "available": true,
+    "title": "Dragon Ball Super Card Game: Fusion World Card Goku Ultra Instinct Sleeves Vol. 4",
+    "store": "Gamescape",
+    "price": "10.00 EUR",
+    "since": "2026-07-04T09:10:57"
+  },
+  "https://gamescape.gr/en/shop/tcg-accessories/toploaders-holders/up-3-x-4-ultra-clear-platinum-toploader-25ct": {
+    "available": true,
+    "title": "UP – 3″ X 4″ Ultra Clear Platinum Toploader 25ct",
+    "store": "Gamescape",
+    "price": "7.00 EUR",
+    "since": "2026-07-04T09:10:57"
+  },
+  "https://gamescape.gr/shop/tcg-accessories/toploaders/up-3-x-4-ultra-clear-platinum-toploader-25ct": {
+    "available": true,
+    "title": "UP – 3″ X 4″ Ultra Clear Platinum Toploader 25ct",
+    "store": "Gamescape",
+    "price": "7.00 EUR",
+    "since": "2026-07-04T09:10:57"
+  },
+  "https://gamescape.gr/en/shop/trading-card-games/dragon-ball-fusion-world/booster-boxes-dragon-ball-fusion-world/dragon-ball-fusion-world-fb04-ultra-limit-booster-box-24-boosters-en-3": {
+    "available": true,
+    "title": "Dragon Ball Fusion World FB04 Ultra Limit Booster Box (24 Boosters) – EN",
+    "store": "Gamescape",
+    "price": "120.00 EUR",
+    "since": "2026-07-04T09:10:58"
+  },
+  "https://gamescape.gr/shop/trading-card-games/dragon-ball-fusion-world/booster-boxes-dragon-ball-fusion-world/dragon-ball-fusion-world-fb04-ultra-limit-booster-box-24-boosters-en": {
+    "available": true,
+    "title": "Dragon Ball Fusion World FB04 Ultra Limit Booster Box (24 Boosters) – EN",
+    "store": "Gamescape",
+    "price": "120.00 EUR",
+    "since": "2026-07-04T09:10:58"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/funko-pop/414003-φιγούρα-funko-pop-warhammer-40k-ultramarines-captain-1288": {
+    "available": true,
+    "title": "Φιγούρα Funko POP! Warhammer 40K - Ultramarines Captain #1288",
+    "store": "eFantasy",
+    "price": "15 EUR",
+    "since": "2026-07-04T09:11:31"
+  },
+  "https://dabas.hr/product/dragon-ball-super-ultra-instinct-sign-goku-plisana-igracka-25cm": {
+    "available": true,
+    "title": "Dragon Ball Super Ultra Instinct -Sign- Goku plišana igračka 25cm",
+    "store": "Dabas",
+    "price": "12.95 EUR",
+    "since": "2026-07-04T09:11:42"
+  },
+  "https://dabas.hr/product/podloga-za-mis-dragon-ball-super-goku-ultra-instinct": {
+    "available": true,
+    "title": "Podloga za miš Dragon Ball Super Goku Ultra Instinct",
+    "store": "Dabas",
+    "price": "9.95 EUR",
+    "since": "2026-07-04T09:11:42"
+  },
+  "https://dabas.hr/product/dragon-ball-super-goku-ultra-instinct-model-kit-16cm": {
+    "available": false,
+    "title": "Dragon Ball Super Goku Ultra Instinct Model Kit 16cm",
+    "store": "Dabas",
+    "price": "44.95 EUR",
+    "since": "2026-07-04T09:11:42"
+  },
+  "https://poke-power.eu/products/dragon-ball-super-ultra-limit-fb04-booster-box": {
+    "available": true,
+    "title": "Dragon Ball Super - Ultra Limit FB04 Booster Box",
+    "store": "PokePower",
+    "price": "99.99 EUR",
+    "since": "2026-07-04T09:11:47"
+  },
+  "https://poke-power.eu/products/dragon-ball-super-ultra-limit-fb04-booster-pack": {
+    "available": true,
+    "title": "Dragon Ball Super - Ultra Limit FB04 Booster Pack",
+    "store": "PokePower",
+    "price": "7.50 EUR",
+    "since": "2026-07-04T09:11:47"
+  },
+  "https://dragonfirecollectibles.com/product/dragon-ball-super-card-game-fusion-world-fb04-ultra-limit-booster-display": {
+    "available": true,
+    "title": "Dragon Ball Super Card Game – Fusion World FB04 Ultra Limit Booster Display",
+    "store": "Dragonfire",
+    "price": "99.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/pokemon-tcg-terapagos-ex-ultra-premium-collection": {
+    "available": true,
+    "title": "Pokemon TCG – Terapagos ex Ultra-Premium Collection",
+    "store": "Dragonfire",
+    "price": "199.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/ultra-prism-single-pack-blister-alolan-sandshrew": {
+    "available": false,
+    "title": "Ultra Prism Single Pack Blister [Alolan Sandshrew]",
+    "store": "Dragonfire",
+    "price": "79.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/mega-charizard-x-ex-ultra-premium-collection": {
+    "available": false,
+    "title": "Pokemon: Mega Charizard X Ex Ultra-premium Collection",
+    "store": "Dragonfire",
+    "price": "219.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/ultra-prism-porygon-z-3-pack-blister": {
+    "available": false,
+    "title": "Pokemon TCG – Ultra Prism: Porygon-Z 3-Pack Blister",
+    "store": "Dragonfire",
+    "price": "159.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/mega-zygarde-ex-premium-collection": {
+    "available": true,
+    "title": "Mega Zygarde ex Premium Collection",
+    "store": "Dragonfire",
+    "price": "49.99 EUR",
+    "since": "2026-07-04T09:12:11"
+  },
+  "https://dragonfirecollectibles.com/product/pre-order-pokemon-tcg-mega-greninja-ex-premium-collection": {
+    "available": true,
+    "title": "Pokemon TCG Mega Greninja ex Premium Collection",
+    "store": "Dragonfire",
+    "price": "59.99 EUR",
+    "since": "2026-07-04T09:12:11"
   }
 }
