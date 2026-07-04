@@ -2,17 +2,16 @@
 """
 Multi-store TCG stock monitor
 -----------------------------
-Watches five shops for products matching your keywords and notifies you via
+Watches these shops for products matching your keywords and notifies you via
 Discord webhook and/or email the moment one is in stock (or preorderable):
 
   * Black Flame   (blackflamecollectibles.com, Squarespace)
-  * Mythic Vault  (mythicvault.com, WooCommerce)
-  * Buzzer        (buzzer.gr, WooCommerce)
   * Gamescape     (gamescape.gr, WooCommerce)
   * eFantasy      (efantasy.gr, custom platform)
   * Dabas         (dabas.hr, WooCommerce, Croatian)
   * PokePower     (poke-power.eu, Shopify, Slovenian)
   * Dragonfire    (dragonfirecollectibles.com, WooCommerce, Greek)
+  * Fantasy Shop  (fantasy-shop.gr, CS-Cart, Greek/English)
 
 Keyword matching is fuzzy:
   * case- and accent-insensitive ("pokemon" matches "Pokémon", Greek accents too)
@@ -60,8 +59,9 @@ KEYWORD_GROUPS = [
     ["30th", "elite"],
     ["30th", "ultra"],
     ["upc"],
-    ["ultra"],
-    ["30th", "bundle"]
+    ["ultra premium"],
+    ["ultra-premium"],
+    ["30th", "bundle"],
 ]
 
 # Products whose title contains any of these are NEVER alerted.
@@ -69,7 +69,10 @@ KEYWORD_GROUPS = [
 # you for every Ultra PRO sleeve/binder/deck box. Remove it if you want those.
 EXCLUDE_TERMS = [
     "ultra pro",
-    "ultraman",
+    "ultra clear",
+    "dragon ball",
+    "warhammer",
+    "funko",
 ]
 
 # Abbreviations the matcher expands automatically (works in both directions;
@@ -159,6 +162,17 @@ STORES = [
             "/product-category/tcg/pokemon/booster-boxes/",
         ],
         "product_needle": "/product/",
+    },
+    {
+        "name": "Fantasy Shop",
+        "base": "https://www.fantasy-shop.gr",
+        "type": "search",
+        "search": "/index.php?dispatch=products.search&pname=Y&q={q}",   # CS-Cart search
+        "listings": [
+            "/en/kartes/trading-card-games-tcg/pokemon-trading-card-game/",   # Pokemon TCG category
+        ],
+        "product_needle": ".html",      # CS-Cart SEO: product pages end in .html
+        "paginate": True,               # CS-Cart categories support ?page=2
     },
 ]
 
@@ -383,6 +397,15 @@ def parse_product_page(page_html: str, url: str) -> dict:
                     if not price and off.get("price"):
                         price = str(off["price"])
                         currency = currency or str(off.get("priceCurrency") or "")
+
+    # 2.5) schema.org microdata in the raw HTML (CS-Cart and older platforms);
+    #      first occurrence belongs to the main product's buy block
+    if available is None:
+        md = re.search(r'schema\.org/+(InStock|LimitedAvailability|PreOrder|OnlineOnly|'
+                       r'OutOfStock|SoldOut|Discontinued)\b', page_html)
+        if md:
+            available = md.group(1) in ("InStock", "LimitedAvailability",
+                                        "PreOrder", "OnlineOnly")
 
     # 3) WooCommerce stock CSS classes / add-to-cart button
     if available is None:
