@@ -224,19 +224,11 @@ STORES = [
         ],
         "product_needle": "/products/",
     },
-    {
-        "name": "Alza",
-        "base": "https://www.alza.de",
-        "type": "search",
-        "search": "/search.htm?exps={q}",   # Alza's search endpoint
-        "listings": [],
-        "product_needle": ".htm",           # Alza product URLs end in -d<id>.htm
-    },
 ]
 
 # Also alert when a NEW matching product gets listed even if it's sold out
 # (handy for catching listings the second they appear).
-ALERT_ON_NEW_LISTING = False
+ALERT_ON_NEW_LISTING = True
 
 # Send a "still alive" Discord/email message this often, so you can tell
 # "nothing new in stock" apart from "the bot stopped running". 0 = off.
