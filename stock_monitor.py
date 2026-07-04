@@ -79,6 +79,7 @@ EXCLUDE_TERMS = [
     "dragon ball",
     "warhammer",
     "funko",
+    "acryl",
 ]
 
 # Abbreviations the matcher expands automatically (works in both directions;
