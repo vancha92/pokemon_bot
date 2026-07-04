@@ -12,6 +12,11 @@ Discord webhook and/or email the moment one is in stock (or preorderable):
   * PokePower     (poke-power.eu, Shopify, Slovenian)
   * Dragonfire    (dragonfirecollectibles.com, WooCommerce, Greek)
   * Fantasy Shop  (fantasy-shop.gr, CS-Cart, Greek/English)
+  * Card Corner   (card-corner.de, JTL-Shop, German)
+  * CardBuddys    (cardbuddys.de, Shopify, German)
+  * TCGviert      (tcgviert.com, Shopify, German)
+  * Kofuku        (kofuku.de, Shopify, German)
+  * Alza          (alza.de, custom platform, German)
 
 Keyword matching is fuzzy:
   * case- and accent-insensitive ("pokemon" matches "Pokémon", Greek accents too)
@@ -19,7 +24,8 @@ Keyword matching is fuzzy:
   * small typos are tolerated ("phantasmel" still matches "Phantasmal")
 
 Availability detection tries, in order: WooCommerce Store API -> product meta
-tags -> schema.org JSON-LD -> stock CSS classes -> visible text (English + Greek).
+tags -> schema.org JSON-LD -> microdata -> stock CSS classes -> visible text
+(English, Greek, Croatian, Slovenian, German).
 
 Usage:
     python stock_monitor.py            # run forever (checks every CHECK_EVERY_SECONDS)
@@ -174,6 +180,57 @@ STORES = [
         "product_needle": ".html",      # CS-Cart SEO: product pages end in .html
         "paginate": True,               # CS-Cart categories support ?page=2
     },
+    {
+        "name": "Card Corner",
+        "base": "https://www.card-corner.de",
+        "type": "search",
+        "search": "/?qs={q}",           # JTL-Shop search parameter
+        "listings": [
+            "/Pokemon-Box",             # Boxen: ETBs, UPCs, collections
+            "/Pokemon-Display",         # Displays = booster boxes in German
+        ],
+        "product_needle": None,         # JTL product URLs are plain slugs
+        "paginate": True,
+        "page_param": "seite",          # JTL paginates with ?seite=2
+    },
+    {
+        "name": "CardBuddys",
+        "base": "https://cardbuddys.de",
+        "type": "shopify",
+        "currency": "EUR",
+        "listings": [
+            "/collections/pokemon-boxen",   # used only if products.json is blocked
+        ],
+        "product_needle": "/products/",
+    },
+    {
+        "name": "TCGviert",
+        "base": "https://tcgviert.com",
+        "type": "shopify",
+        "currency": "EUR",
+        "listings": [
+            "/collections/vorbestellungen/vorbestellungen",   # used only if products.json is blocked
+        ],
+        "product_needle": "/products/",
+    },
+    {
+        "name": "Kofuku",
+        "base": "https://kofuku.de",
+        "type": "shopify",
+        "currency": "EUR",
+        "listings": [
+            "/collections/pokemon-karten",   # used only if products.json is blocked
+        ],
+        "product_needle": "/products/",
+    },
+    {
+        "name": "Alza",
+        "base": "https://www.alza.de",
+        "type": "search",
+        "search": "/search.htm?exps={q}",   # Alza's search endpoint
+        "listings": [],
+        "product_needle": ".htm",           # Alza product URLs end in -d<id>.htm
+    },
 ]
 
 # Also alert when a NEW matching product gets listed even if it's sold out
@@ -225,11 +282,15 @@ SKIP_PATHS = ("/search-results", "/product-category", "/cart", "/my-account",
 NEG_TEXT = ("sold out", "out of stock", "currently unavailable",
             "εξαντλη", "μη διαθεσιμ", "δεν ειναι διαθεσιμ",          # Greek
             "rasprodano", "nema na zalihi", "nije dostupno",         # Croatian
-            "razprodano", "ni na zalogi")                            # Slovenian
+            "razprodano", "ni na zalogi",                            # Slovenian
+            "ausverkauft", "nicht auf lager", "nicht verfugbar",     # German
+            "nicht lieferbar", "vergriffen")                         # (ü -> u after accent strip)
 POS_TEXT = ("add to cart", "add to basket",
             "προσθηκη στο καλαθι",                                   # Greek
             "dodaj u kosaricu",                                      # Croatian
-            "dodaj v kosarico")                                      # Slovenian
+            "dodaj v kosarico",                                      # Slovenian
+            "in den warenkorb", "sofort verfugbar",                  # German
+            "sofort lieferbar", "auf lager")
 
 # An open preorder counts as "in stock" — that's the moment to act on hyped
 # products. Remove entries here if you only want alerts for shelf stock.
@@ -574,7 +635,7 @@ def gather_store(store: dict, queries: list) -> list:
         for page in range(1, pages + 1):
             url = base + listing if listing.startswith("/") else listing
             if page > 1:
-                url += ("&" if "?" in url else "?") + f"page={page}"
+                url += ("&" if "?" in url else "?") + f"{store.get('page_param', 'page')}={page}"
             try:
                 links = harvest_links(get(url).text, base, needle)
             except Exception as e:
