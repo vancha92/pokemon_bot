@@ -568,5 +568,26 @@
     "store": "Kofuku",
     "price": "60.00 EUR",
     "since": "2026-07-04T09:34:25"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/409263-pokemon-tcg-mega-evolution-first-partner-illustration-collection-series-3": {
+    "available": false,
+    "title": "Pokemon TCG Mega Evolution - First Partner Illustration Collection Series 3",
+    "store": "eFantasy",
+    "price": "49 EUR",
+    "since": "2026-07-05T17:31:42"
+  },
+  "https://dragonfirecollectibles.com/product/pre-order-pokemon-tcg-first-partner-illustration-collection-series-2": {
+    "available": true,
+    "title": "Pokemon TCG - First Partner Illustration Collection Series 2",
+    "store": "Dragonfire",
+    "price": "59.99 EUR",
+    "since": "2026-07-05T17:32:29"
+  },
+  "https://www.card-corner.de/Pokemon-First-Partner-Series-1-Promo-Booster-ENG": {
+    "available": true,
+    "title": "Pokemon First Partner Series 1 Promo Booster, 59,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-05T17:34:16"
   }
 }
