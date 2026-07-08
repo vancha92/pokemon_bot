@@ -31,8 +31,8 @@
     "available": true,
     "title": "Pokemon Mega Charizard X ex Ultra Premium Collection",
     "store": "Dabas",
-    "price": "249.95 EUR",
-    "since": "2026-07-08T20:02:40"
+    "price": "",
+    "since": "2026-07-08T22:03:49"
   },
   "https://dabas.hr/product/dbs-goku-ultra-instinct-match-makers-figura-13cm": {
     "available": true,
@@ -52,15 +52,15 @@
     "available": false,
     "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
     "store": "Dabas",
-    "price": "129.95 EUR",
-    "since": "2026-07-08T20:32:33"
+    "price": "",
+    "since": "2026-07-08T22:03:49"
   },
   "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon 151 Ultra Premium Collection",
     "store": "Dabas",
-    "price": "149.95 EUR",
-    "since": "2026-07-08T20:32:33"
+    "price": "",
+    "since": "2026-07-08T22:03:49"
   },
   "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
@@ -189,7 +189,7 @@
     "since": "2026-07-04T09:11:47"
   },
   "_meta": {
-    "last_heartbeat": "2026-07-07T21:53:09"
+    "last_heartbeat": "2026-07-08T22:06:32"
   },
   "https://www.efantasy.gr/el/προϊόντα/game-accessories/361789-evoretro-pet-protector-for-151-ultra-premium-collection-pokemon-2-pack": {
     "available": false,
