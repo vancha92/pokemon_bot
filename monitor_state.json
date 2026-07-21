@@ -610,5 +610,12 @@
     "store": "TCGviert",
     "price": "54.99 EUR",
     "since": "2026-07-13T19:18:56"
+  },
+  "https://www.card-corner.de/Pokemon-Mega-Greninja-EX-Premium-Collection": {
+    "available": true,
+    "title": "Pokemon Mega Greninja EX Premium Collection, 58,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-07-21T11:49:37"
   }
 }
