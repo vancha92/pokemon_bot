@@ -69,6 +69,9 @@ KEYWORD_GROUPS = [
     ["ultra-premium"],
     ["30th", "bundle"],
     ["first", "partner", "series 1"],
+    ["delta", "box"],
+    ["delta", "display"],
+    ["delta", "36"],
 ]
 
 # Products whose title contains any of these are NEVER alerted.
