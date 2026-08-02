@@ -645,5 +645,110 @@
     "store": "Dragonfire",
     "price": "44.99 EUR",
     "since": "2026-07-31T13:34:25"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/420195-pokemon-tcg-mega-evolution-delta-reign-elite-trainer-box": {
+    "available": false,
+    "title": "Pokemon TCG Mega Evolution: Delta Reign - Elite Trainer Box",
+    "store": "eFantasy",
+    "price": "89 EUR",
+    "since": "2026-08-02T07:32:16"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/420201-pokemon-tcg-mega-evolution-delta-reign-booster-box-36-boosters": {
+    "available": false,
+    "title": "Pokemon TCG Mega Evolution: Delta Reign - Booster Box (36 Boosters)",
+    "store": "eFantasy",
+    "price": "216 EUR",
+    "since": "2026-08-02T07:32:16"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/παιχνίδια-με-κάρτες/336752-weiss-schwarz-macross-delta-premium-booster-display-6-packs": {
+    "available": true,
+    "title": "Weiss / Schwarz - Macross Delta Premium Booster Display (6 packs)",
+    "store": "eFantasy",
+    "price": "53 EUR",
+    "since": "2026-08-02T07:32:16"
+  },
+  "https://poke-power.eu/products/pokemon-scarlet-violet-destined-rivals-build-battle-box": {
+    "available": false,
+    "title": "Pokemon - Scarlet & Violet Destined Rivals Build & Battle Box",
+    "store": "PokePower",
+    "price": "59.99 EUR",
+    "since": "2026-08-02T07:33:05"
+  },
+  "https://poke-power.eu/products/pokemon-scarlet-violet-destined-rivals-booster-box": {
+    "available": false,
+    "title": "Pokemon - Scarlet & Violet Destined Rivals Booster Box",
+    "store": "PokePower",
+    "price": "234.90 EUR",
+    "since": "2026-08-02T07:33:06"
+  },
+  "https://poke-power.eu/products/pokemon-scarlet-violet-destined-rivals-elite-trainer-box": {
+    "available": false,
+    "title": "Pokemon - Scarlet & Violet Destined Rivals Elite Trainer Box",
+    "store": "PokePower",
+    "price": "99.90 EUR",
+    "since": "2026-08-02T07:33:06"
+  },
+  "https://poke-power.eu/collections/elite-trainer-box/products/pokemon-scarlet-violet-destined-rivals-elite-trainer-box": {
+    "available": false,
+    "title": "Pokemon - Scarlet & Violet Destined Rivals Elite Trainer Box",
+    "store": "PokePower",
+    "price": "99,90 EUR",
+    "since": "2026-08-02T07:33:06"
+  },
+  "https://www.card-corner.de/Pokemon-Cynthias-Garchomp-EX-Premium-Collection-Englisch": {
+    "available": false,
+    "title": "Pokemon Cynthias Garchomp EX - Premium Collection (Englisch), 49,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:35"
+  },
+  "https://www.card-corner.de/Pokemon-Delta-Herrschaft-Display": {
+    "available": true,
+    "title": "Pokemon Delta Herrschaft Display",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:35"
+  },
+  "https://www.card-corner.de/Pokemon-Delta-Herrschaft-Top-Trainer-Box": {
+    "available": true,
+    "title": "Pokemon Delta Herrschaft Top Trainer Box",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:35"
+  },
+  "https://www.card-corner.de/Pokemon-Delta-Reign-Display": {
+    "available": true,
+    "title": "Pokemon Delta Reign Display",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:35"
+  },
+  "https://www.card-corner.de/Pokemon-Delta-Reign-Elite-Trainer-Box": {
+    "available": true,
+    "title": "Pokemon Delta Reign Elite Trainer Box",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:35"
+  },
+  "https://www.card-corner.de/Pokemon-Destined-Rivals-Display": {
+    "available": true,
+    "title": "Pokemon Destined Rivals Display - Card-Corner, 419,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:36"
+  },
+  "https://www.card-corner.de/Pokemon-Destined-Rivals-Elite-Trainer-Box": {
+    "available": true,
+    "title": "Pokemon Destined Rivals Elite Trainer Box, 199,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:36"
+  },
+  "https://www.card-corner.de/Pokemon-Destined-Rivals-Tin-Box": {
+    "available": false,
+    "title": "Pokemon Destined Rivals Tin Box, 34,99 €",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-08-02T07:35:36"
   }
 }
