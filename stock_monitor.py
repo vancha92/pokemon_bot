@@ -69,10 +69,10 @@ KEYWORD_GROUPS = [
     ["ultra-premium"],
     ["30th", "bundle"],
     ["first", "partner", "series 1"],
-    ["delta", "box"],
+    ["delta", "booster", "box"],
     ["delta", "display"],
     ["delta", "36"],
-    ["destined", "box"],
+    ["destined", "booster", "box"],
     ["destined", "display"],
     ["destined", "36"],
 ]
