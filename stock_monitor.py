@@ -72,6 +72,9 @@ KEYWORD_GROUPS = [
     ["delta", "box"],
     ["delta", "display"],
     ["delta", "36"],
+    ["destined", "box"],
+    ["destined", "display"],
+    ["destined", "36"],
 ]
 
 # Products whose title contains any of these are NEVER alerted.
