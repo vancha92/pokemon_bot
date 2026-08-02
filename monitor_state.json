@@ -750,5 +750,12 @@
     "store": "Card Corner",
     "price": "",
     "since": "2026-08-02T07:35:36"
+  },
+  "https://dragonfirecollectibles.com/product/pokemon-tcg-destined-rivals-scarlet-violet-booster-box": {
+    "available": true,
+    "title": "Pokemon TCG: Destined Rivals Scarlet & Violet Booster Box",
+    "store": "Dragonfire",
+    "price": "449.99 EUR",
+    "since": "2026-08-02T08:03:02"
   }
 }
