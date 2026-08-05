@@ -31,8 +31,8 @@
     "available": true,
     "title": "Pokemon Mega Charizard X ex Ultra Premium Collection",
     "store": "Dabas",
-    "price": "249.95 EUR",
-    "since": "2026-08-05T13:27:30"
+    "price": "",
+    "since": "2026-08-05T17:04:08"
   },
   "https://dabas.hr/product/dbs-goku-ultra-instinct-match-makers-figura-13cm": {
     "available": true,
@@ -52,15 +52,15 @@
     "available": false,
     "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
     "store": "Dabas",
-    "price": "129.95 EUR",
-    "since": "2026-08-05T13:27:30"
+    "price": "",
+    "since": "2026-08-05T17:04:08"
   },
   "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon 151 Ultra Premium Collection",
     "store": "Dabas",
-    "price": "149.95 EUR",
-    "since": "2026-08-05T13:27:30"
+    "price": "",
+    "since": "2026-08-05T17:04:08"
   },
   "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
@@ -640,11 +640,11 @@
     "since": "2026-07-30T09:16:39"
   },
   "https://dragonfirecollectibles.com/product/pokemon-tcg-first-partner-illustration-collection-series-3": {
-    "available": false,
+    "available": true,
     "title": "(Pre-order) Pokemon TCG - First Partner Illustration Collection Series 3",
     "store": "Dragonfire",
     "price": "44.99 EUR",
-    "since": "2026-08-04T08:33:16"
+    "since": "2026-08-05T17:05:02"
   },
   "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/420195-pokemon-tcg-mega-evolution-delta-reign-elite-trainer-box": {
     "available": false,
