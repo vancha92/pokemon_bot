@@ -360,11 +360,11 @@
     "since": "2026-07-31T21:03:15"
   },
   "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Collection": {
-    "available": false,
+    "available": true,
     "title": "Pokemon 151 Ultra Premium Collection Englisch",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-08-04T07:49:53"
+    "since": "2026-08-07T08:35:01"
   },
   "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Kollektion-Deutsch": {
     "available": false,
@@ -479,11 +479,11 @@
     "since": "2026-08-06T07:27:12"
   },
   "https://www.card-corner.de/Pokemon-Ultra-Premium-Collection-Charizard": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Ultra Premium Collection Charizard",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-08-05T16:42:15"
+    "since": "2026-08-07T08:35:01"
   },
   "https://www.card-corner.de/Pokemon-Ultra-Premium-Kollektion-Glurak": {
     "available": false,
