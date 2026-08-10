@@ -402,11 +402,11 @@
     "since": "2026-07-04T09:33:58"
   },
   "https://www.card-corner.de/Pokemon-Celebration-Ultra-Premium-Kollektion-Deutsch": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Celebration Ultra Premium Kollektion (Deutsch)",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-08-04T07:49:53"
+    "since": "2026-08-10T07:09:28"
   },
   "https://www.card-corner.de/Pokemon-Celebrations-Ultra-Premium-Collection": {
     "available": true,
