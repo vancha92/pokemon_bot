@@ -764,5 +764,12 @@
     "store": "TCGviert",
     "price": "49.99 EUR",
     "since": "2026-08-07T10:05:25"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/367381-pokemon-tcg-mega-charizard-x-ex-ultra-premium-collection": {
+    "available": true,
+    "title": "Pokemon TCG - Mega Charizard X Ex Ultra Premium Collection",
+    "store": "eFantasy",
+    "price": "229 EUR",
+    "since": "2026-08-14T11:47:08"
   }
 }
