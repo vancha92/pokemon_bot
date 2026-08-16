@@ -771,5 +771,19 @@
     "store": "eFantasy",
     "price": "229 EUR",
     "since": "2026-08-14T11:47:08"
+  },
+  "https://gamescape.gr/en/shop/trading-card-games/pokemon/box-sets-more/pokemon-mega-charizard-x-ex-ultra-premium-collection-en-3": {
+    "available": true,
+    "title": "Pokemon Mega Charizard X Ex Ultra Premium Collection – EN",
+    "store": "Gamescape",
+    "price": "280.00 EUR",
+    "since": "2026-08-16T10:01:34"
+  },
+  "https://gamescape.gr/shop/trading-card-games/pokemon/box-sets-more/pokemon-mega-charizard-x-ex-ultra-premium-collection-en": {
+    "available": true,
+    "title": "Pokemon Mega Charizard X Ex Ultra Premium Collection – EN",
+    "store": "Gamescape",
+    "price": "280.00 EUR",
+    "since": "2026-08-16T10:01:34"
   }
 }
