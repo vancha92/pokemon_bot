@@ -325,11 +325,11 @@
     "since": "2026-07-04T09:12:11"
   },
   "https://dragonfirecollectibles.com/product/mega-charizard-x-ex-ultra-premium-collection": {
-    "available": false,
+    "available": true,
     "title": "Pokemon: Mega Charizard X Ex Ultra-premium Collection",
     "store": "Dragonfire",
-    "price": "234.99 EUR",
-    "since": "2026-08-14T17:03:28"
+    "price": "299.99 EUR",
+    "since": "2026-08-17T19:36:15"
   },
   "https://dragonfirecollectibles.com/product/ultra-prism-porygon-z-3-pack-blister": {
     "available": false,
