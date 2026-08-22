@@ -785,5 +785,19 @@
     "store": "Gamescape",
     "price": "280.00 EUR",
     "since": "2026-08-16T10:01:34"
+  },
+  "https://cardbuddys.de/products/first-partner-illustration-collection-en": {
+    "available": true,
+    "title": "First Partner Series 1 Illustration Collection EN",
+    "store": "CardBuddys",
+    "price": "79.95 EUR",
+    "since": "2026-08-22T11:55:44"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/first-partner-illustration-collection-en": {
+    "available": true,
+    "title": "First Partner Series 1 Illustration Collection EN",
+    "store": "CardBuddys",
+    "price": "79,95 EUR",
+    "since": "2026-08-22T11:55:45"
   }
 }
