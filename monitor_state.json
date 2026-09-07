@@ -52,15 +52,15 @@
     "available": false,
     "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
     "store": "Dabas",
-    "price": "129.95 EUR",
-    "since": "2026-09-07T19:32:26"
+    "price": "",
+    "since": "2026-09-07T22:34:25"
   },
   "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon 151 Ultra Premium Collection",
     "store": "Dabas",
-    "price": "149.95 EUR",
-    "since": "2026-09-07T19:32:26"
+    "price": "",
+    "since": "2026-09-07T22:34:25"
   },
   "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
@@ -444,11 +444,11 @@
     "since": "2026-08-04T07:49:53"
   },
   "https://www.card-corner.de/Pokemon-Phantasmal-Flames-Ultra-Premium-Collection": {
-    "available": true,
+    "available": false,
     "title": "Pokemon Mega Charizard X ex - Ultra Premium Collection",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-09-07T14:06:26"
+    "since": "2026-09-07T22:37:17"
   },
   "https://www.card-corner.de/Pokemon-Prismatic-Evolutions-Super-Premium-Collection-Englisch": {
     "available": true,
