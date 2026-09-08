@@ -820,5 +820,12 @@
     "store": "CardBuddys",
     "price": "44,95 EUR",
     "since": "2026-09-08T10:28:19"
+  },
+  "https://dragonfirecollectibles.com/product/pre-order-pokemon-30th-celebration-elite-trainer-box": {
+    "available": true,
+    "title": "PRE-ORDER Pokemon 30th Celebration Elite Trainer Box",
+    "store": "Dragonfire",
+    "price": "99.99 EUR",
+    "since": "2026-09-08T15:35:37"
   }
 }
