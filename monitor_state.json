@@ -416,11 +416,11 @@
     "since": "2026-09-07T14:06:25"
   },
   "https://www.card-corner.de/Pokemon-Fatale-Flammen-Ultra-Premium-Kollektion": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Mega Glurak X ex - Ultra Premium Kollektion",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-08-12T14:50:33"
+    "since": "2026-09-11T10:20:40"
   },
   "https://www.card-corner.de/Pokemon-Greninja-EX-Ultra-Premium-Collection-Englisch": {
     "available": true,
@@ -444,11 +444,11 @@
     "since": "2026-08-04T07:49:53"
   },
   "https://www.card-corner.de/Pokemon-Phantasmal-Flames-Ultra-Premium-Collection": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Mega Charizard X ex - Ultra Premium Collection",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-09-07T22:37:17"
+    "since": "2026-09-11T10:20:40"
   },
   "https://www.card-corner.de/Pokemon-Prismatic-Evolutions-Super-Premium-Collection-Englisch": {
     "available": true,
@@ -479,11 +479,11 @@
     "since": "2026-08-06T07:27:12"
   },
   "https://www.card-corner.de/Pokemon-Ultra-Premium-Collection-Charizard": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Ultra Premium Collection Charizard",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-09-09T12:35:30"
+    "since": "2026-09-11T10:20:40"
   },
   "https://www.card-corner.de/Pokemon-Ultra-Premium-Kollektion-Glurak": {
     "available": false,
