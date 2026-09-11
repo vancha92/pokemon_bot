@@ -834,5 +834,12 @@
     "store": "TCGviert",
     "price": "104.99 EUR",
     "since": "2026-09-10T06:05:41"
+  },
+  "https://dabas.hr/product/pokemon-charizard-ex-super-premium-collection": {
+    "available": true,
+    "title": "Pokemon Charizard ex Super-Premium Collection",
+    "store": "Dabas",
+    "price": "",
+    "since": "2026-09-11T22:33:40"
   }
 }
