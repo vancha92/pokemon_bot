@@ -731,11 +731,11 @@
     "since": "2026-08-02T07:35:35"
   },
   "https://www.card-corner.de/Pokemon-Destined-Rivals-Display": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Destined Rivals Display - Card-Corner",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-09-16T11:06:24"
+    "since": "2026-09-17T11:21:25"
   },
   "https://www.card-corner.de/Pokemon-Destined-Rivals-Elite-Trainer-Box": {
     "available": true,
