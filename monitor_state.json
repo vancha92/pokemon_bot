@@ -848,5 +848,12 @@
     "store": "Fantasy Shop",
     "price": "76.5 EUR",
     "since": "2026-09-23T18:04:11"
+  },
+  "https://dragonfirecollectibles.com/product/30th-celebration-booster-bundle": {
+    "available": true,
+    "title": "(Pre-Order) 30th Celebration Booster Bundle",
+    "store": "Dragonfire",
+    "price": "74.99 EUR",
+    "since": "2026-09-28T11:03:16"
   }
 }
