@@ -855,5 +855,12 @@
     "store": "Dragonfire",
     "price": "74.99 EUR",
     "since": "2026-10-02T06:28:54"
+  },
+  "https://www.fantasy-shop.gr/en/30th-celebration-booster-bundle.html": {
+    "available": true,
+    "title": "30th Celebration Booster Bundle",
+    "store": "Fantasy Shop",
+    "price": "55 EUR",
+    "since": "2026-10-03T09:18:16"
   }
 }
