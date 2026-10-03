@@ -189,7 +189,7 @@
     "since": "2026-07-24T09:46:44"
   },
   "_meta": {
-    "last_heartbeat": "2026-10-02T09:21:26"
+    "last_heartbeat": "2026-10-03T09:36:05"
   },
   "https://www.efantasy.gr/el/προϊόντα/game-accessories/361789-evoretro-pet-protector-for-151-ultra-premium-collection-pokemon-2-pack": {
     "available": false,
@@ -857,10 +857,10 @@
     "since": "2026-10-02T06:28:54"
   },
   "https://www.fantasy-shop.gr/en/30th-celebration-booster-bundle.html": {
-    "available": true,
+    "available": false,
     "title": "30th Celebration Booster Bundle",
     "store": "Fantasy Shop",
     "price": "55 EUR",
-    "since": "2026-10-03T09:18:16"
+    "since": "2026-10-03T09:33:43"
   }
 }
