@@ -850,11 +850,11 @@
     "since": "2026-10-04T21:48:25"
   },
   "https://dragonfirecollectibles.com/product/30th-celebration-booster-bundle": {
-    "available": false,
+    "available": true,
     "title": "30th Celebration Booster Bundle",
     "store": "Dragonfire",
     "price": "74.99 EUR",
-    "since": "2026-10-09T13:18:17"
+    "since": "2026-10-12T08:18:37"
   },
   "https://www.fantasy-shop.gr/en/30th-celebration-booster-bundle.html": {
     "available": false,
@@ -862,5 +862,12 @@
     "store": "Fantasy Shop",
     "price": "55 EUR",
     "since": "2026-10-03T09:33:43"
+  },
+  "https://tcgviert.com/products/pokemon-tcg-prismatic-evolutions-sv8-5-super-premium-collection-en-limit": {
+    "available": true,
+    "title": "Pokémon TCG: Prismatic Evolutions (SV8.5) - Super Premium Collection (EN) - Limit!",
+    "store": "TCGviert",
+    "price": "349.99 EUR",
+    "since": "2026-10-12T08:21:42"
   }
 }
