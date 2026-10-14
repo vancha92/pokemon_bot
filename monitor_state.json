@@ -869,5 +869,19 @@
     "store": "TCGviert",
     "price": "349.99 EUR",
     "since": "2026-10-12T08:21:42"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/436646-pokemon-tcg-30th-celebration-espeon-ex-ultra-premium-collection": {
+    "available": false,
+    "title": "Pokemon TCG 30th Celebration - Espeon ex Ultra-Premium Collection",
+    "store": "eFantasy",
+    "price": "249 EUR",
+    "since": "2026-10-14T08:46:58"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/436650-pokemon-tcg-30th-celebration-umbreon-ex-ultra-premium-collection": {
+    "available": false,
+    "title": "Pokemon TCG 30th Celebration - Umbreon ex Ultra-Premium Collection",
+    "store": "eFantasy",
+    "price": "249 EUR",
+    "since": "2026-10-14T08:46:58"
   }
 }
