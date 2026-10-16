@@ -890,5 +890,12 @@
     "store": "eFantasy",
     "price": "99 EUR",
     "since": "2026-10-16T07:46:55"
+  },
+  "https://www.efantasy.gr/el/προϊόντα/magic-the-gathering/438272-magic-the-gathering-collector-booster-box-12-boosters-marvel-darkhold-destiny": {
+    "available": true,
+    "title": "Magic the Gathering Collector Booster Box (12 boosters) - Marvel: Darkhold Destiny",
+    "store": "eFantasy",
+    "price": "599 EUR",
+    "since": "2026-10-16T11:47:05"
   }
 }
