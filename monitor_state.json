@@ -925,5 +925,12 @@
     "store": "Dragonfire",
     "price": "109.99 EUR",
     "since": "2026-10-24T22:33:11"
+  },
+  "https://www.card-corner.de/Pokemon-Ascended-Heroes-Focused-Fighters-Premium-Collection": {
+    "available": true,
+    "title": "Pokemon Ascended Heroes Focused Fighters Premium Collection (EN)",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-10-25T07:51:00"
   }
 }
