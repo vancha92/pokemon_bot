@@ -381,11 +381,11 @@
     "since": "2026-07-04T09:33:57"
   },
   "https://www.card-corner.de/Pokemon-30th-Celebration-Booster-Bundle": {
-    "available": false,
+    "available": true,
     "title": "Pokemon 30th Celebration Booster Bundle (30th Anniversary)",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-10-24T19:06:03"
+    "since": "2026-10-26T11:36:32"
   },
   "https://www.card-corner.de/Pokemon-30th-Celebration-Elite-Trainer-Box": {
     "available": true,
@@ -472,11 +472,11 @@
     "since": "2026-08-04T07:49:53"
   },
   "https://www.card-corner.de/Pokemon-Terapagos-EX-Ultra-Premium-Kollektion-Deutsch": {
-    "available": true,
+    "available": false,
     "title": "Pokemon Terapagos EX - Ultra Premium Kollektion (Deutsch)",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-10-23T08:08:55"
+    "since": "2026-10-26T11:36:32"
   },
   "https://www.card-corner.de/Pokemon-Ultra-Premium-Collection-Charizard": {
     "available": false,
