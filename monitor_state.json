@@ -953,5 +953,12 @@
     "store": "CardBuddys",
     "price": "179.95 EUR",
     "since": "2026-10-28T15:27:58"
+  },
+  "https://kofuku.de/products/pokemon-scarlet-violet-pokemon-151-mew-ultra-premium-collection-englisch": {
+    "available": true,
+    "title": "Pokémon Scarlet & Violet - Pokémon 151 - Mew Ultra Premium Collection (englisch)",
+    "store": "Kofuku",
+    "price": "650.00 EUR",
+    "since": "2026-10-29T17:20:53"
   }
 }
