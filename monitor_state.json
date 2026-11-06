@@ -189,7 +189,7 @@
     "since": "2026-07-24T09:46:44"
   },
   "_meta": {
-    "last_heartbeat": "2026-11-05T14:06:05"
+    "last_heartbeat": "2026-11-06T14:21:04"
   },
   "https://www.efantasy.gr/el/προϊόντα/game-accessories/361789-evoretro-pet-protector-for-151-ultra-premium-collection-pokemon-2-pack": {
     "available": false,
@@ -416,11 +416,11 @@
     "since": "2026-10-20T21:06:16"
   },
   "https://www.card-corner.de/Pokemon-Fatale-Flammen-Ultra-Premium-Kollektion": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Mega Glurak X ex - Ultra Premium Kollektion",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-10-05T21:31:47"
+    "since": "2026-11-06T14:20:36"
   },
   "https://www.card-corner.de/Pokemon-Greninja-EX-Ultra-Premium-Collection-Englisch": {
     "available": false,
@@ -465,11 +465,11 @@
     "since": "2026-08-04T07:49:53"
   },
   "https://www.card-corner.de/Pokemon-Terapagos-EX-Ultra-Premium-Collection-Englisch": {
-    "available": false,
+    "available": true,
     "title": "Pokemon Terapagos EX - Ultra Premium Collection (Englisch)",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-08-04T07:49:53"
+    "since": "2026-11-06T14:20:36"
   },
   "https://www.card-corner.de/Pokemon-Terapagos-EX-Ultra-Premium-Kollektion-Deutsch": {
     "available": false,
