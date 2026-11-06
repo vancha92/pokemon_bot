@@ -981,5 +981,33 @@
     "store": "CardBuddys",
     "price": "219.95 EUR",
     "since": "2026-11-06T09:50:37"
+  },
+  "https://gamescape.gr/en/shop/trading-card-games/pokemon/box-sets-more/pokemon-30th-celebration-night-ultra-premium-collection-en": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Night ULTRA PREMIUM COLLECTION – EN",
+    "store": "Gamescape",
+    "price": "450.00 EUR",
+    "since": "2026-11-06T13:16:14"
+  },
+  "https://gamescape.gr/shop/trading-card-games/pokemon/box-sets-more/pokemon-30th-celebration-night-ultra-premium-collection-en": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Night ULTRA PREMIUM COLLECTION – EN",
+    "store": "Gamescape",
+    "price": "450.00 EUR",
+    "since": "2026-11-06T13:16:15"
+  },
+  "https://gamescape.gr/en/shop/trading-card-games/pokemon/box-sets-more/pokemon-30th-celebration-day-ultra-premium-collection-en": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Day ULTRA PREMIUM COLLECTION – EN",
+    "store": "Gamescape",
+    "price": "450.00 EUR",
+    "since": "2026-11-06T13:16:15"
+  },
+  "https://gamescape.gr/shop/trading-card-games/pokemon/box-sets-more/pokemon-30th-celebration-day-ultra-premium-collection-en": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Day ULTRA PREMIUM COLLECTION – EN",
+    "store": "Gamescape",
+    "price": "450.00 EUR",
+    "since": "2026-11-06T13:16:15"
   }
 }
