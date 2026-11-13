@@ -214,10 +214,10 @@
   },
   "https://www.efantasy.gr/el/προϊόντα/pokemon-tcg/414108-pokemon-tcg-30th-celebration-ultra-premium-collection": {
     "available": false,
-    "title": "efantasy.gr",
+    "title": "eFantasy.gr - Games 'n' Comics - Εδώ θα βρείτε τεράστια ποικιλία από παιχνίδια, επιτραπέζια, Funko Pop! φιγούρες, comics, puzzles, δώρα",
     "store": "eFantasy",
     "price": "",
-    "since": "2026-11-04T23:46:51"
+    "since": "2026-11-13T08:02:08"
   },
   "https://gamescape.gr/shop/tcg-accessories/sleeves/standard-art-sleeves/dragon-ball-super-card-game-fusion-world-card-goku-ultra-instinct-sleeves-vol-4": {
     "available": true,
@@ -1009,5 +1009,12 @@
     "store": "Gamescape",
     "price": "450.00 EUR",
     "since": "2026-11-06T13:16:15"
+  },
+  "https://www.card-corner.de/Pokemon-30th-Celebration-Pokemon-Center-ETB": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Pokemon Center ETB (30th Anniversary) Englis",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-11-13T08:06:03"
   }
 }
