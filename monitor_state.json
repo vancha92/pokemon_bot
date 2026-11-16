@@ -1037,5 +1037,12 @@
     "store": "CardBuddys",
     "price": "449,95 EUR",
     "since": "2026-11-16T10:35:52"
+  },
+  "https://www.card-corner.de/Pokemon-30th-Celebration-Ditto-Premium-Collection": {
+    "available": true,
+    "title": "Pokemon 30th Celebration Ditto Premium Collection",
+    "store": "Card Corner",
+    "price": "",
+    "since": "2026-11-16T16:06:13"
   }
 }
