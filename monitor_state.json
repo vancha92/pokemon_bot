@@ -1023,5 +1023,19 @@
     "store": "Card Corner",
     "price": "",
     "since": "2026-11-16T09:55:52"
+  },
+  "https://cardbuddys.de/products/30th-celebration-pokemon-center-elite-trainer-box-en": {
+    "available": true,
+    "title": "30th Celebration Pokémon Center Elite Trainer Box EN",
+    "store": "CardBuddys",
+    "price": "449.95 EUR",
+    "since": "2026-11-16T10:35:52"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30th-celebration-pokemon-center-elite-trainer-box-en": {
+    "available": true,
+    "title": "30th Celebration Pokémon Center Elite Trainer Box EN",
+    "store": "CardBuddys",
+    "price": "449,95 EUR",
+    "since": "2026-11-16T10:35:52"
   }
 }
