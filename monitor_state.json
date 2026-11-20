@@ -1046,11 +1046,11 @@
     "since": "2026-11-16T16:20:05"
   },
   "https://cardbuddys.de/products/30-jahre-ultra-premium-kollektion-tag-de": {
-    "available": false,
+    "available": true,
     "title": "30 Jahre Ultra-Premium-Kollektion Tag DE",
     "store": "CardBuddys",
-    "price": "89.95 EUR",
-    "since": "2026-11-20T12:50:09"
+    "price": "349.95 EUR",
+    "since": "2026-11-20T20:35:55"
   },
   "https://cardbuddys.de/products/30th-celebration-elite-trainer-box-en": {
     "available": true,
@@ -1065,5 +1065,26 @@
     "store": "CardBuddys",
     "price": "149,95 EUR",
     "since": "2026-11-20T14:35:32"
+  },
+  "https://cardbuddys.de/products/30-jahre-ultra-premium-kollektion-nacht-de": {
+    "available": true,
+    "title": "30 Jahre Ultra-Premium-Kollektion Nacht DE",
+    "store": "CardBuddys",
+    "price": "349.95 EUR",
+    "since": "2026-11-20T20:35:55"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30-jahre-ultra-premium-kollektion-nacht-de": {
+    "available": true,
+    "title": "30 Jahre Ultra-Premium-Kollektion Nacht DE",
+    "store": "CardBuddys",
+    "price": "349,95 EUR",
+    "since": "2026-11-20T20:35:55"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30-jahre-ultra-premium-kollektion-tag-de": {
+    "available": true,
+    "title": "30 Jahre Ultra-Premium-Kollektion Tag DE",
+    "store": "CardBuddys",
+    "price": "349,95 EUR",
+    "since": "2026-11-20T20:35:55"
   }
 }
