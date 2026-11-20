@@ -1051,5 +1051,19 @@
     "store": "CardBuddys",
     "price": "89.95 EUR",
     "since": "2026-11-20T12:50:09"
+  },
+  "https://cardbuddys.de/products/30th-celebration-elite-trainer-box-en": {
+    "available": true,
+    "title": "30th Celebration Elite Trainer Box EN",
+    "store": "CardBuddys",
+    "price": "149.95 EUR",
+    "since": "2026-11-20T14:35:32"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30th-celebration-elite-trainer-box-en": {
+    "available": true,
+    "title": "30th Celebration Elite Trainer Box EN",
+    "store": "CardBuddys",
+    "price": "149,95 EUR",
+    "since": "2026-11-20T14:35:32"
   }
 }
