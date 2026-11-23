@@ -1086,5 +1086,19 @@
     "store": "CardBuddys",
     "price": "349,95 EUR",
     "since": "2026-11-20T20:35:55"
+  },
+  "https://cardbuddys.de/products/30th-celebration-ultra-premium-collektion-night-en": {
+    "available": true,
+    "title": "30th Celebration Ultra-Premium Collektion Night EN",
+    "store": "CardBuddys",
+    "price": "399.95 EUR",
+    "since": "2026-11-23T16:20:34"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30th-celebration-ultra-premium-collektion-night-en": {
+    "available": true,
+    "title": "30th Celebration Ultra-Premium Collektion Night EN",
+    "store": "CardBuddys",
+    "price": "399,95 EUR",
+    "since": "2026-11-23T16:20:34"
   }
 }
