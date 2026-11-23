@@ -360,11 +360,11 @@
     "since": "2026-08-31T21:04:19"
   },
   "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Collection": {
-    "available": true,
+    "available": false,
     "title": "Pokemon 151 Ultra Premium Collection Englisch",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-11-23T09:20:32"
+    "since": "2026-11-23T18:06:12"
   },
   "https://www.card-corner.de/Pokemon-151-Ultra-Premium-Kollektion-Deutsch": {
     "available": true,
@@ -423,11 +423,11 @@
     "since": "2026-11-13T15:11:25"
   },
   "https://www.card-corner.de/Pokemon-Greninja-EX-Ultra-Premium-Collection-Englisch": {
-    "available": true,
+    "available": false,
     "title": "Pokemon Greninja EX - Ultra Premium Collection (Englisch)",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-11-23T06:50:21"
+    "since": "2026-11-23T18:06:12"
   },
   "https://www.card-corner.de/Pokemon-Lugia-EX-Latias-EX-Premium-Collection": {
     "available": true,
