@@ -189,7 +189,7 @@
     "since": "2026-07-24T09:46:44"
   },
   "_meta": {
-    "last_heartbeat": "2026-11-22T16:21:07"
+    "last_heartbeat": "2026-11-23T16:38:07"
   },
   "https://www.efantasy.gr/el/προϊόντα/game-accessories/361789-evoretro-pet-protector-for-151-ultra-premium-collection-pokemon-2-pack": {
     "available": false,
@@ -1100,5 +1100,19 @@
     "store": "CardBuddys",
     "price": "399,95 EUR",
     "since": "2026-11-23T16:20:34"
+  },
+  "https://cardbuddys.de/products/30th-celebration-ultra-premium-collektion-day-en": {
+    "available": true,
+    "title": "30th Celebration Ultra-Premium Collektion Day EN",
+    "store": "CardBuddys",
+    "price": "399.95 EUR",
+    "since": "2026-11-23T16:37:43"
+  },
+  "https://cardbuddys.de/collections/pokemon-boxen/products/30th-celebration-ultra-premium-collektion-day-en": {
+    "available": true,
+    "title": "30th Celebration Ultra-Premium Collektion Day EN",
+    "store": "CardBuddys",
+    "price": "399,95 EUR",
+    "since": "2026-11-23T16:37:44"
   }
 }
