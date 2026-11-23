@@ -52,15 +52,15 @@
     "available": false,
     "title": "Pokemon Sword & Shield Charizard Ultra Premium Collection",
     "store": "Dabas",
-    "price": "",
-    "since": "2026-11-23T17:03:19"
+    "price": "129.95 EUR",
+    "since": "2026-11-23T17:17:17"
   },
   "https://dabas.hr/product/pokemon-151-ultra-premium-collection": {
     "available": false,
     "title": "Pokemon 151 Ultra Premium Collection",
     "store": "Dabas",
-    "price": "",
-    "since": "2026-11-23T17:03:19"
+    "price": "149.95 EUR",
+    "since": "2026-11-23T17:17:17"
   },
   "https://dabas.hr/product/pokemon-cynthias-garchomp-ex-premium-collection": {
     "available": false,
@@ -731,11 +731,11 @@
     "since": "2026-08-02T07:35:35"
   },
   "https://www.card-corner.de/Pokemon-Destined-Rivals-Display": {
-    "available": true,
+    "available": false,
     "title": "Pokemon Destined Rivals Display - Card-Corner",
     "store": "Card Corner",
     "price": "",
-    "since": "2026-11-23T09:50:14"
+    "since": "2026-11-23T17:20:41"
   },
   "https://www.card-corner.de/Pokemon-Destined-Rivals-Elite-Trainer-Box": {
     "available": true,
